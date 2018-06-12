@@ -1,0 +1,16 @@
+{% extends 'posts/layout.html' %}
+
+{% block content %}
+<h3 class="center-align red lighten-3">title</h3>
+<div class="card">
+    {% for key in data %}
+    <div class="card-content">
+        <!-- {{key.country_id}} -->
+    </div>
+    <div class="card-action">
+        {{key.country_name}}
+    </div>
+    {% endfor %}
+</div>
+<a class="btn" href="/posts">Go Back</a>
+{% endblock %}
